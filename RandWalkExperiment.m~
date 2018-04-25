@@ -1,13 +1,29 @@
+%%Random Walk with step 5
 m51=randomWalk(A, 5);
 m52=randomWalk(A, 5);
 m53=randomWalk(A, 5);
 m54=randomWalk(A, 5);
 m55=randomWalk(A, 5);
 m56=randomWalk(A, 5);
-m57=randomWalk(A, );
-m58=randomWalk(A, 20);
-m59=randomWalk(A, 20);
-m510=randomWalk(A, 20);
+m57=randomWalk(A, 5);
+m58=randomWalk(A, 5);
+m59=randomWalk(A, 5);
+m510=randomWalk(A, 5);
+save randomWalk5 m51 m52 m53 m54 m55 m56 m57 m58 m59 m59 m510
+
+%Random Walk with step 10
+m101=randomWalk(A, 10);
+m102=randomWalk(A, 10);
+m103=randomWalk(A, 10);
+m104=randomWalk(A, 10);
+m105=randomWalk(A, 10);
+m106=randomWalk(A, 10);
+m107=randomWalk(A, 10);
+m108=randomWalk(A, 10);
+m109=randomWalk(A, 10);
+m1010=randomWalk(A, 10);
+save randomWalk10 m101 m102 m103 m104 m105 m56 m57 m58 m59 m59 m510
+
 
 %Random Walk for 20 steps
 m201=randomWalk(A, 20);
@@ -20,6 +36,6 @@ m207=randomWalk(A, 20);
 m208=randomWalk(A, 20);
 m209=randomWalk(A, 20);
 m210=randomWalk(A, 20);
-save randomWalk20 m201 m202 m203 m204 m205 m206 m207 m207 m208 m209 m210
+save randomWalk20 m201 m202 m203 m204 m205 m206 m207 m208 m209 m210
 
 %5, 10, 20, 40, 80
