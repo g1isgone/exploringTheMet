@@ -1,0 +1,5 @@
+function[frequencyMatrix] = pathToFreqMat(popMat)
+    paths = popMat(:,2:end)
+frequencyMatrix = zeros(45); 
+    
+end
