@@ -11,7 +11,7 @@ function [visitedGalleries, visitedProb] = galleryProbWalk(popGraph, numSteps, s
      
     for step = 1:numSteps %for each number of steps
         popAllNeighbors = popGraph(curr,:); %extract all the popularity from that node
-        nbrs = find(popAllNeighbors <0 ); %find the nbr nodes' ids
+        nbrs = find(popAllNeighbors > 0 ); %find the nbr nodes' ids
         popNbrs = popAllNeighbors(nbrs); %extract the popularity of all the nbrs
         
         totalPop = sum(popNbrs); %the sum of all the popularity of the neighbors
@@ -32,7 +32,7 @@ function [visitedGalleries, visitedProb] = galleryProbWalk(popGraph, numSteps, s
         
         %calculating probability to go to that gallery 
         nbrProb = popNbrs/totalPop; %the probability of all the nbrs 
-        cumProb = cumProb*nbrProb(curr); %the cumulative probability to go from the previous path of galleries to this new gallery
+        cumProb = cumProb*nbrProb(nbrIndex); %the cumulative probability to go from the previous path of galleries to this new gallery
         visitedProb(step) = cumProb; %store this cumulative probability 
    
     end 
