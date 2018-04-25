@@ -1,3 +1,4 @@
+%%Creat randomwalk for step 5, 10, 20, 40, 80
 %%Random Walk with step 5
 m51=randomWalk(A, 5);
 m52=randomWalk(A, 5);
@@ -62,3 +63,4 @@ m808=randomWalk(A, 80);
 m809=randomWalk(A, 80);
 m810=randomWalk(A, 80);
 save randomWalk80 m801 m802 m803 m804 m805 m806 m807 m808 m809 m810
+
