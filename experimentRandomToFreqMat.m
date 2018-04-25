@@ -14,6 +14,6 @@ m5SumFreqAvg =  (m51Freq + m52Freq+ m53Freq +m54Freq +m55Freq + m56Freq +m57Freq
 
 
 %%
-save rand5Freq m51Freq m52Freq m53Freq m54Freq m55Freq m56Freq m57Freq m58Freq m59Freq m510Freq
-
+save rand5Freq m51Freq m52Freq m53Freq m54Freq m55Freq m56Freq m57Freq m58Freq m59Freq m510Freq m5SumFreqAvg
+fprintf("finished saving converted frequency matrices \n"); 
 %%
