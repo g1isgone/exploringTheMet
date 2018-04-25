@@ -1,0 +1,38 @@
+%Given the popularity of each node, the number of steps, and the start
+%location --> Figure out the path the viewer will most likely go to
+%depending on the popularity of the painting. It will also return the
+%probability to go from one gallery to another. 
+function [visitedGalleries, visitedProb] = galleryProbWalk(popGraph, numSteps, startLocation)
+    visitedGalleries = zeros(1, numSteps); %initialization of data structure that denotes which galleries you have been to
+    visitedProb = zeros(1, numSteps); %initialization of data structure that denotes th
+    
+    curr = startLocation; 
+    cumProb = 1; 
+     
+    
+    for step = 1:numSteps 
+        popAllNeighbors = popGraph(curr,:); 
+        nbrs = find(popAllNeighbors <0 ); 
+        popNbrs = popAllNeighbors(nbrs); 
+        
+        totalPop = sum(popNbrs); 
+        randPop = randi(totalPop); 
+        
+        nbrIndex = 1; 
+        while(randDeg > 0 )  
+            randPop = randPop-popNbrs(nbrIndex);  
+            nbrIndex = nbrIndex+1;  
+        end 
+        
+        nbrIndex = nbrIndex-1;  
+        curr = nbrs(nbrIndex); 
+        visitedGalleries(step) = curr; 
+        
+        nbrProb = popNbrs/totalPop; 
+        cumProb = cumProb*nbrProb(curr);
+        visitedProb(step) = cumProb; 
+   
+    end 
+    visitedGalleries = [startLocation visitedGalleries]; 
+    visitedProb = [1 visitedProb]; 
+end
