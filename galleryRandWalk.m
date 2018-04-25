@@ -5,7 +5,7 @@ function [visitedGalleries] = galleryRandWalk(graph, startLocation, numSteps)
     visitedGalleries = zeros(1,numSteps); %initializes a list to store all the galleries that have been visited
     curr = startLocation; %the current location we are on
     
-    for step = 1:numsteps
+    for step = 1:numSteps
         allNeighbors = graph(curr, :); %extract all 45 nodes in relation to curr node
         nbrCandidates = find(allNeighbors == 1); %find the neighbors of the currNode
         
