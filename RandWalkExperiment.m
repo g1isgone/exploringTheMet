@@ -51,3 +51,14 @@ m410=randomWalk(A, 40);
 save randomWalk40 m401 m402 m403 m404 m405 m406 m407 m408 m409 m410
 
 %80
+m801=randomWalk(A, 80);
+m802=randomWalk(A, 80);
+m803=randomWalk(A, 80);
+m804=randomWalk(A, 80);
+m805=randomWalk(A, 80);
+m806=randomWalk(A, 80);
+m807=randomWalk(A, 80);
+m808=randomWalk(A, 80);
+m809=randomWalk(A, 80);
+m810=randomWalk(A, 80);
+save randomWalk80 m801 m802 m803 m804 m805 m806 m807 m808 m809 m810
