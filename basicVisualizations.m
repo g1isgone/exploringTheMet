@@ -68,3 +68,10 @@ figure;  hist(popInit(4:45));
 title('Histogram of Popularity of Galleries'); 
 xlabel('Popularity'); 
 ylabel('Frequency'); 
+
+
+
+
+
+%% Graph Visulaization 
+G = graph(original); 
