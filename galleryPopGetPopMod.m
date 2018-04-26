@@ -22,8 +22,8 @@ function [visitedGalleries, visitedProb] = galleryPopGetPopMod(popGraph, numStep
         popNbrNbrs = popGraph(nbrs, :); %extract the popularity for the nbrs' neighbors
         
      
-        for node_Nbr = 1:size(a,1)
-            for nbr_Nbr = 1:size(a,45)
+        for node_Nbr = 1:size(popNbrNbrs,1)
+            for nbr_Nbr = 1:size(popNbrNbrs,45)
                 if(any(visitedGalleries == nbr_Nbr))
                     popNbrNbrs(node_Nbr,nbr_Nbr) = 346; 
                     fprintf("visited nbr_Nbr\n"); 
