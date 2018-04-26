@@ -12,8 +12,7 @@ randPopFreq58 = pathToFreqMat(Randwalk58);
 randPopFreq59 = pathToFreqMat(Randwalk59);
 
 randPop5FreqAvg = (randPopFreq50 + randPopFreq51 + randPopFreq52 + randPopFreq53 +randPopFreq54 + randPopFreq55 + randPopFreq56 + randPopFreq57 + randPopFreq58 + randPopFreq59)/10; 
-save randPop5Freq randPopFreq50 randPopFreq51 randPopFreq52 randPopFreq53 randPopFreq54 randPopFreq55 randPopFreq56 randPopFreq57 randPopFreq58 randPopFreq59 randPop5FreqAvg
-
+ 
 
 %%
 randPopFreq100 = pathToFreqMat(Randwalk100);
@@ -28,8 +27,6 @@ randPopFreq108 = pathToFreqMat(Randwalk108);
 randPopFreq109 = pathToFreqMat(Randwalk109);
 
 randPop10FreqAvg = (randPopFreq100 + randPopFreq101 + randPopFreq102 + randPopFreq103 +randPopFreq104 + randPopFreq105 + randPopFreq106 + randPopFreq107 + randPopFreq108 + randPopFreq109)/10; 
-save randPop10Freq randPopFreq100 randPopFreq101 randPopFreq102 randPopFreq103 randPopFreq104 randPopFreq105 randPopFreq106 randPopFreq107 randPopFreq108 randPopFreq109 randPop10FreqAvg
-
 
 %%
 randPopFreq200 = pathToFreqMat(Randwalk200);
@@ -44,9 +41,6 @@ randPopFreq208 = pathToFreqMat(Randwalk208);
 randPopFreq209 = pathToFreqMat(Randwalk209);
 
 randPop20FreqAvg = (randPopFreq200 + randPopFreq201 + randPopFreq202 + randPopFreq203 +randPopFreq204 + randPopFreq205 + randPopFreq206 + randPopFreq207 + randPopFreq208 + randPopFreq209)/10; 
-save randPop20Freq randPopFreq200 randPopFreq201 randPopFreq202 randPopFreq203 randPopFreq204 randPopFreq205 randPopFreq206 randPopFreq207 randPopFreq208 randPopFreq209 randPop20FreqAvg
-
-
 %%
 randPopFreq400 = pathToFreqMat(Randwalk400);
 randPopFreq401 = pathToFreqMat(Randwalk401);
@@ -60,8 +54,6 @@ randPopFreq408 = pathToFreqMat(Randwalk408);
 randPopFreq409 = pathToFreqMat(Randwalk409);
 
 randPop40FreqAvg = (randPopFreq400 + randPopFreq401 + randPopFreq402 + randPopFreq403 +randPopFreq404 + randPopFreq405 + randPopFreq406 + randPopFreq407 + randPopFreq408 + randPopFreq409)/10;
-save randPop40Freq randPopFreq400 randPopFreq401 randPopFreq402 randPopFreq403 randPopFreq404 randPopFreq405 randPopFreq406 randPopFreq407 randPopFreq408 randPopFreq409 randPop40FreqAvg
-
 %%
 randPopFreq800 = pathToFreqMat(Randwalk800);
 randPopFreq801 = pathToFreqMat(Randwalk801);
@@ -75,7 +67,6 @@ randPopFreq808 = pathToFreqMat(Randwalk808);
 randPopFreq809 = pathToFreqMat(Randwalk809);
 
 randPop80FreqAvg = (randPopFreq800 + randPopFreq801 + randPopFreq802 + randPopFreq803 +randPopFreq804 + randPopFreq805 + randPopFreq806 + randPopFreq807 + randPopFreq808 + randPopFreq809)/10;
-save randPop80Freq randPopFreq800 randPopFreq801 randPopFreq802 randPopFreq803 randPopFreq804 randPopFreq805 randPopFreq206 randPopFreq807 randPopFreq808 randPopFreq809 randPop80FreqAvg
 
  
  

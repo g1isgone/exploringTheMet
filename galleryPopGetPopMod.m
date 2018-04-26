@@ -1,4 +1,4 @@
-function [visitedGalleries, visitedProb] = galleryPopGetPop(popGraph, numSteps, startLocation)
+function [visitedGalleries, visitedProb] = galleryPopGetPopMod(popGraph, numSteps, startLocation)
     visitedGalleries = zeros(1, numSteps); %initialization of data structure that denotes which galleries you have been to
     visitedProb = zeros(1, numSteps); %initialization of data structure that denotes the probability to go from one gallery to another
     
@@ -10,7 +10,27 @@ function [visitedGalleries, visitedProb] = galleryPopGetPop(popGraph, numSteps, 
         nbrs = find(popAllNeighbors > 0 ); %find the nbr nodes' ids
         popNbrs = popAllNeighbors(nbrs); %extract the popularity of all the nbrs
    
+        %check if there have been repeats and keep a note of those nodes 
+        for node_i = 1:numel(nbrs) 
+            if(any(visitedGalleries == nbrs(node_i)))
+                popNbrs(node_i) = 346; 
+                fprintf("visited\n"); 
+            end 
+          
+        end 
+        
         popNbrNbrs = popGraph(nbrs, :); %extract the popularity for the nbrs' neighbors
+        
+     
+        for node_Nbr = 1:size(popNbrNbrs,1)
+            for nbr_Nbr = 1:size(popNbrNbrs,45)
+                if(any(visitedGalleries == nbr_Nbr))
+                    popNbrNbrs(node_Nbr,nbr_Nbr) = 346; 
+                    fprintf("visited nbr_Nbr\n"); 
+                end
+            end
+        end
+        
         localPop = sum(popNbrNbrs, 2)' + popNbrs; %the local popularity for a neighbor (includes nbr + its nbrs popularity)
         
         totalPop = sum(localPop); %the sum of all the popularity of the localPopularity
