@@ -35,5 +35,6 @@ function [visitedGalleries, visitedProb] = galleryPopGetPop(popGraph, startLocat
         visitedProb(stepI) = cumProb; %store this cumulative probability 
 
     end
-        
+    visitedGalleries = [startLocation visitedGalleries];
+    visitedProb = [1 visitedProb];  
 end
