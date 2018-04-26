@@ -1,4 +1,4 @@
- A=zeros(45,45);
+A=zeros(45,45);
 
 A=addedge(A,1,45);
 A=addedge(A,1,2);
