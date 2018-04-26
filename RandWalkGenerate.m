@@ -22,8 +22,8 @@ m106=randomWalk(A, 10);
 m107=randomWalk(A, 10);
 m108=randomWalk(A, 10);
 m109=randomWalk(A, 10);
-m1010=randomWalk(A, 10);
-save randomWalk10 m101 m102 m103 m104 m105 m106 m107 m108 m109 m1010 
+m110=randomWalk(A, 10);
+save randomWalk10 m101 m102 m103 m104 m105 m106 m107 m108 m109 m110 
 
 %Random Walk for 20 steps
 m201=randomWalk(A, 20);

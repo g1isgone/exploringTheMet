@@ -27,14 +27,14 @@ m106Freq = pathToFreqMat(m106);
 m107Freq = pathToFreqMat(m107);
 m108Freq = pathToFreqMat(m108);
 m109Freq = pathToFreqMat(m109);
-m1010Freq = pathToFreqMat(m1010);
+m110Freq = pathToFreqMat(m110);
 
 %% 
-m10SumFreqAvg =  (m101Freq + m102Freq+ m103Freq +m104Freq +m105Freq + m106Freq +m107Freq+ m108Freq +m109Freq + m1010Freq)/10; 
+m10SumFreqAvg =  (m101Freq + m102Freq+ m103Freq +m104Freq +m105Freq + m106Freq +m107Freq+ m108Freq +m109Freq + m110Freq)/10; 
 
 
 %%
-save rand10Freq m101Freq  m102Freq m103Freq m104Freq m105Freq  m106Freq m107Freq m108Freq m109Freq m1010Freq m10SumFreqAvg;
+save rand10Freq m101Freq  m102Freq m103Freq m104Freq m105Freq  m106Freq m107Freq m108Freq m109Freq m110Freq m10SumFreqAvg;
 fprintf('finished saving converted frequency matrices \n');
 
 
