@@ -62,4 +62,7 @@ A=addedge(A,43,44);
 A=addedge(A,41,1);
 A=addedge(A,44,45);
 
+A=addedge(A,22,45);
+A=addedge(A,41,44);
+
 original = A; 
