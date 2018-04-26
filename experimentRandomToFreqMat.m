@@ -13,7 +13,7 @@ m510Freq = pathToFreqMat(m510);
 %%
 m5SumFreqAvg =  (m51Freq + m52Freq+ m53Freq +m54Freq +m55Freq + m56Freq +m57Freq+ m58Freq +m59Freq + m510Freq)/10; 
 
-
+heatmap(m5SumFreqAvg); 
 %%
 save rand5Freq m51Freq m52Freq m53Freq m54Freq m55Freq m56Freq m57Freq m58Freq m59Freq m510Freq m5SumFreqAvg
 fprintf('finished saving converted frequency matrices \n'); 
@@ -40,8 +40,6 @@ fprintf('finished saving converted frequency matrices \n');
 
 
 %%
-
-heatmap(m5SumFreqAvg); 
 figure; heatmap(m10SumFreqAvg); 
 
 
@@ -98,10 +96,16 @@ m810Freq = pathToFreqMat(m810);
 %%
 m80SumFreqAvg =  (m801Freq + m802Freq+ m803Freq +m804Freq +m805Freq + m806Freq +m807Freq+ m808Freq +m809Freq + m810Freq)/10; 
 %%
-save rand80Freq m801Freq  m402Freq m403Freq m404Freq m405Freq m406Freq m407Freq m408Freq m409Freq  m410Freq;
+save rand80Freq m801Freq  m802Freq m803Freq m804Freq m805Freq m806Freq m807Freq m808Freq m809Freq  m810Freq;
 fprintf('finished saving converted frequency matrices \n');
 
-heatmap(m40SumFreqAvg); 
+heatmap(m80SumFreqAvg); 
 
+%%
+heatmap(m5SumFreqAvg)
+heatmap(m10SumFreqAvg)
+heatmap(m20SumFreqAvg)
+heatmap(m40SumFreqAvg)
+heatmap(m80SumFreqAvg)
 
 
