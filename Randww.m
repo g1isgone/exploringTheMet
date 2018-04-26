@@ -4,6 +4,7 @@ for i=1:45
     Randwalk800=[Randwalk800; Randwalk];
 end  
 
+
 Randwalk801=[];
 for i=1:45
     Randwalk=galleryProbWalk(popMat, 80, i);
