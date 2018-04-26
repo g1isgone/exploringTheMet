@@ -34,7 +34,7 @@ m10SumFreqAvg =  (m101Freq + m102Freq+ m103Freq +m104Freq +m105Freq + m106Freq +
 
 
 %%
-save rand10Freq m101Freq  m102Freq m103Freq m104Freq m105Freq  m106Freq m107Freq m108Freq m109Freq m1010Freq;
+save rand10Freq m101Freq  m102Freq m103Freq m104Freq m105Freq  m106Freq m107Freq m108Freq m109Freq m1010Freq m10SumFreqAvg;
 fprintf('finished saving converted frequency matrices \n');
 
 
@@ -58,7 +58,7 @@ m210Freq = pathToFreqMat(m210);
 %%
 m20SumFreqAvg =  (m201Freq + m202Freq+ m203Freq +m204Freq +m205Freq + m206Freq +m207Freq+ m208Freq +m209Freq + m210Freq)/10; 
 %%
-save rand20Freq m201Freq  m202Freq m203Freq m204Freq m205Freq m206Freq m207Freq m208Freq m209Freq  m210Freq;
+save rand20Freq m201Freq  m202Freq m203Freq m204Freq m205Freq m206Freq m207Freq m208Freq m209Freq  m210Freq m20SumFreqAvg;
 fprintf('finished saving converted frequency matrices \n');
 
 heatmap(m20SumFreqAvg); 
@@ -77,7 +77,7 @@ m410Freq = pathToFreqMat(m410);
 %%
 m40SumFreqAvg =  (m401Freq + m402Freq+ m403Freq +m404Freq +m405Freq + m406Freq +m407Freq+ m408Freq +m409Freq + m410Freq)/10; 
 %%
-save rand40Freq m401Freq  m402Freq m403Freq m404Freq m405Freq m406Freq m407Freq m408Freq m409Freq  m410Freq;
+save rand40Freq m401Freq  m402Freq m403Freq m404Freq m405Freq m406Freq m407Freq m408Freq m409Freq  m410Freq m40SumFreqAvg;
 fprintf('finished saving converted frequency matrices \n');
 
 heatmap(m40SumFreqAvg); 
@@ -96,7 +96,7 @@ m810Freq = pathToFreqMat(m810);
 %%
 m80SumFreqAvg =  (m801Freq + m802Freq+ m803Freq +m804Freq +m805Freq + m806Freq +m807Freq+ m808Freq +m809Freq + m810Freq)/10; 
 %%
-save rand80Freq m801Freq  m802Freq m803Freq m804Freq m805Freq m806Freq m807Freq m808Freq m809Freq  m810Freq;
+save rand80Freq m801Freq  m802Freq m803Freq m804Freq m805Freq m806Freq m807Freq m808Freq m809Freq  m810Freq m80SumFreqAvg;
 fprintf('finished saving converted frequency matrices \n');
 
 heatmap(m80SumFreqAvg); 
