@@ -1,5 +1,6 @@
 %%Creat randomwalk for step 5, 10, 20, 40, 80
 %%Random Walk with step 5
+A=original;
 m51=randomWalk(A, 5);
 m52=randomWalk(A, 5);
 m53=randomWalk(A, 5);
