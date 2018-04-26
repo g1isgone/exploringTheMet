@@ -5,4 +5,4 @@ for i=1:45
     Randwalk50=[Randwalk50; Randwalk];
     RandwalkProb50 = [RandwalkProb50; RandwalkProb]; 
 end
- 
+

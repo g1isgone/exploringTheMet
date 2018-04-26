@@ -108,4 +108,5 @@ heatmap(m20SumFreqAvg)
 heatmap(m40SumFreqAvg)
 heatmap(m80SumFreqAvg)
 
-
+%%
+save RandWalkAvgOriginal m5SumFreqAvg m10SumFreqAvg m20SumFreqAvg m40SumFreqAvg m80SumFreqAvg
