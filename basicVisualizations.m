@@ -70,9 +70,12 @@ xlabel('Popularity');
 ylabel('Frequency'); 
 
 
-
-
-
 %% Graph Visulaization 
 G = graph(original); 
-
+plot(G); 
+%%
+popNbrsOrig = heatmap(original); 
+title(popNbrsOrig, 'Connectivity');
+popNbrsOrig.XLabel = 'Neighboring Galleries'; 
+popNbrsOrig.YLabel = 'Galleries'; 
+ 
