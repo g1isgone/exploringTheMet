@@ -65,3 +65,15 @@ end
 a7 = pathToFreqMat(a7);
 
 figure; heatmap(a7); 
+
+
+%% 
+a8 = [];
+for i=1:45
+    Randwalk=galleryRandWalkMod(original, i, 10);
+    a8=[a8; Randwalk];
+end  
+
+a8 = pathToFreqMat(a8);
+
+figure; heatmap(a8); 
