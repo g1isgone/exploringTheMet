@@ -19,3 +19,4 @@ function [visitedGalleries] = galleryRandWalk(graph, startLocation, numSteps)
     %includes the startLocation as the first node of the visited galleries
     visitedGalleries = [startLocation visitedGalleries]; 
 end
+
